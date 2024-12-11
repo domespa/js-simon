@@ -9,27 +9,32 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div id="countdown" class="d-flex row justify-content-center pb-3 fs-1">0</div>
-        <div id="show-number" class="d-flex row justify-content-center pb-3 fs-2">0</div>
-        <div id="remember-number">
+        <div id="countdown" class="d-flex row justify-content-center pb-3 fs-1">MEMORIZZA I NUMERI</div>
+        <div id="show-number" class="d-flex row justify-content-center pb-3 fs-2"></div>
+        <div id="remember-number" class="d-none">
             <p class="text-center pb-3">Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
             <div class="d-flex row justify-content-center">
                 <div class="col-2">
-                    <input type="number" class="form-control" id="Input1" placeholder="" min="1">
+                    <input type="number" class="form-control" id="Input1" placeholder="" min="1" required>
                 </div>
                 <div class="col-2">
-                    <input type="number" class="form-control" id="Input2" placeholder="" min="1">
+                    <input type="number" class="form-control" id="Input2" placeholder="" min="1" required>
                 </div>   
                 <div class="col-2">
-                    <input type="number" class="form-control" id="Input3" placeholder="" min="1">
+                    <input type="number" class="form-control" id="Input3" placeholder="" min="1" required>
                 </div>   
                 <div class="col-2">
-                    <input type="number" class="form-control" id="Input4" placeholder="" min="1">
+                    <input type="number" class="form-control" id="Input4" placeholder="" min="1" required>
                 </div>   
                 <div class="col-2">
-                    <input type="number" class="form-control" id="Input5" placeholder="" min="1">
+                    <input type="number" class="form-control" id="Input5" placeholder="" min="1" required>
                 </div>            
             </div>
+        </div>
+        <div id="button" class="d-flex justify-content-center pt-3 d-none">
+            <button id="submit" class="btn btn-primary">Conferma</button>
+        </div>
+        <div id="result" class="d-flex justify-content-center pt-3">
         </div>
     </div>
     <script src="js/script.js"></script>
